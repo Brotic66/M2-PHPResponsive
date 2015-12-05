@@ -1,0 +1,1022 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+    <title>Le Rézo sous forme XML</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<link rel="stylesheet" type="text/css" href="rezo2_fichiers/jdm.css">
+<link rel="stylesheet" type="text/css" href="rezo2_fichiers/smoothbox.css">
+<link rel="stylesheet" type="text/css" href="rezo2_fichiers/Roar.css">
+<link rel="stylesheet" type="text/css" href="rezo2_fichiers/libnotifybottom.css">
+<meta name="robots" content="nofollow, notranslate">
+<meta name="googlebot" content="nofollow, notranslate">
+
+<meta name="description" content="Jeu d'associations de termes, trés sympa et amusant. Mots à collectionner, capturer. Trouver les associations les plus pertinentes.">
+<meta name="keywords" content="jeu, mots, mot, expression, collection, associations, fonctions lexicales, jeuxdemots, amusant, fonction lexicale, réseau, réseau lexical, TAL, TALN, langue, langage, lexique, dictionnaire" lang="fr">
+<meta http-equiv="Content-Language" content="fr">
+<meta name="reply-to" content="jeuxdemeaux@gmail.com">
+<meta name="category" content="Jeux">
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="7 days"><meta name="author" content="LIRMM, Mathieu Lafourcade" lang="fr">
+<meta name="copyright" content="LIRMM, Mathieu Lafourcade">
+<meta name="generator" content="">
+<meta name="identifier-url" content="http://www.lirmm.fr/jeuxdemots">
+<meta name="expires" content="never">
+<meta name="Date-Creation-yyyymmdd" content="mai 2006">
+<meta name="Date-Revision-yyyymmdd" content="septembre 2010">
+<meta name="google-site-verification" content="FJvgiMAOHMfdRtqEbU1H23AG_fLYRdz7fIioDc_oOxE"><meta property="og:image" content="logo-jdm/logo1.jpg">
+<meta property="og:image" content="logo-jdm/Logo_JDMrect_fond noir.png">
+<meta property="og:image" content="logo-jdm/Logo_JDMrect_fond_blanc.png">
+<meta property="og:image" content="logo-jdm/Logo_JDMrect_fond_transp.png">
+<meta property="og:image" content="pics/logoJDMcarrevarianteFondNoir.png">
+<meta property="og:image" content="pics/logoJDMcarreFondBlanc.png">
+<meta property="og:image" content="pics/favicon-Je-32-bis.ico">
+
+<style>
+    @font-face {
+		font-family: "fontcandid";
+		src: url("fonts/TEMPSITC.TTF");
+	}
+</style>
+	
+<noscript>
+
+	<div style="position:absolute;z-index:10000;font-size:32pt;">
+
+	<CENTER>Javascript doit fonctionner ! Activez-le et rechargez cette page.
+
+	<br />
+
+	<IMG src="pics/error.png">
+
+	</CENTER>
+
+	<div>
+
+	<meta HTTP-EQUIV="Refresh" content="1;URL=http://jeuxdemots.org/"> 
+
+</noscript>
+
+
+<script type="text/javascript" src="rezo2_fichiers/mootools.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/mootoolsmore.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/jdm_twik_script.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/jdm_duel_script.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/jdm_shake_script.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/jdm_beat_script.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/jdm_nbrel_script.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/jdm_playerstats_script.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/shortcuts.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/smoothbox.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/overlay.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/shake.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/Roar.js"></script>
+<script type="text/javascript" src="rezo2_fichiers/humane.js"></script>
+<link rel="shortcut icon" href="http://www.jeuxdemots.org/pics/favicon-Je-32-bis.ico" type="image/x-icon">
+
+   	<link href="rezo2_fichiers/css.css" rel="stylesheet" type="text/css">
+   	
+  </head>
+<body style="overflow:auto;
+overflow-x:auto;
+overflow-y:visible;overflow-x:hidden;
+padding: 0px; margin: 0px; border: 0px;">
+
+<div class="jdm-level1-block">
+
+	<div class="jdm-prompt-block">
+    <div class="jdm-prompt">
+    Le Rézo XML    </div>
+	</div>
+
+</div>
+
+<div class="jdm-level2-block">
+<table summary="jeuxdemots" style="opacity:0.90;" width="100%" bgcolor="white" border="0" cellpadding="0%" cellspacing="0">
+<tbody><tr><th valign="top" width="200pts">
+	</th><th align="left">
+
+    <div id="rezoform" style="position:relative;top:-43px;">
+    
+
+    Lien de cette page: <url>?gotermsubmit=Chercher&amp;gotermrel=cat</url>
+    <br />
+    <br />
+
+     <form id="gotermrel" name="gotermrel" method="post" action="rezo-xml.php">
+	    <input id="gotermsubmit" name="gotermsubmit" value="Chercher" type="submit"> le mot
+	    <input id="gotermrel" name="gotermrel" value="cat" size="100" type="text">
+	    <input id="output" name="output" value="onlyxml" type="checkbox"> XML seulement
+	    </form>&lt;jdm&gt;<br />
+&lt;mot poids="50" id="309048"&gt;cat&lt;/mot&gt;<br />
+&lt;mot-formate&gt;cat&lt;/mot-formate&gt;<br />
+<br />
+&lt;def&gt;(Botanique) Variante de qat.&lt;br&gt;&lt;i&gt;En Ethiopie, 
+au Yémen et aux Somalies, un petit arbuste fait l'objet d'un important 
+commerce : le cat (Catha edulis Célastracées).&lt;/i&gt;  
+&lt;i&gt;(Jean-Marie Pelt, rogues et plantes magiques, 
+1983)&lt;/i&gt;&lt;br&gt;&lt;i&gt;Arrivé le matin, ayant tout juste pris
+ le temps de se délester de son rapport verbal, Carlier s'était couché, 
+rendu, ayant à compenser deux nuits blanches passées, en plus de la 
+journée intercalaire, à déterrer la B 144 qui, sous la diligente 
+impulsion d'un indigène bourré de cat, était allée, toutes bielles 
+trépignantes, donner du nez dans un éboulis de tranchée.&lt;/i&gt;  
+&lt;i&gt;(André Armandy, La Voie sans disque, les éditions de France, 
+1934, page 1)&lt;/i&gt;&lt;/def&gt;<br />
+<br />
+&lt;sortant&gt;<br />
+&lt;rel type="r_associated" poids="1000000" tid="239128"&gt;_COM&lt;/rel&gt;<br />
+&lt;rel type="r_infopot" poids="267" tid="223173"&gt;_POL-POS&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="252" tid="100370"&gt;exposition&lt;/rel&gt;<br />
+&lt;rel type="r_locution" poids="122" tid="104640"&gt;cat-boat&lt;/rel&gt;<br />
+&lt;rel type="r_locution" poids="122" tid="276030"&gt;l-cat&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="91" tid="113317"&gt;Paris&lt;/rel&gt;<br />
+&lt;rel type="r_infopot" poids="85" tid="254876"&gt;_POL-POS_PC&lt;/rel&gt;<br />
+&lt;rel type="r_infopot" poids="47" tid="241794"&gt;_POL-NEUTRE&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="32" tid="402451"&gt;Éditions&lt;/rel&gt;<br />
+&lt;rel type="r_pos" poids="25" tid="171870"&gt;Nom:&lt;/rel&gt;<br />
+&lt;rel type="r_hypo" poids="25" tid="104640"&gt;cat-boat&lt;/rel&gt;<br />
+&lt;rel type="r_infopot" poids="25" tid="276096"&gt;_INFO-WIKI-YES&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="21" tid="43116"&gt;Chimères&lt;/rel&gt;<br />
+&lt;rel type="r_associated" poids="20" tid="433616"&gt;CAT&lt;/rel&gt;<br />
+&lt;rel type="r_associated" poids="20" tid="402457"&gt;Cat&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="17" tid="103621"&gt;André Masson&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="16" tid="34271"&gt;Arles&lt;/rel&gt;<br />
+&lt;rel type="r_infopot" poids="15" tid="254877"&gt;_POL-NEUTRE_PC&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="15" tid="113288"&gt;avant-garde&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="12" tid="46402"&gt;David Hockney&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="11" tid="98069"&gt;surréalisme&lt;/rel&gt;<br />
+&lt;rel type="r_associated" poids="10" tid="104640"&gt;cat-boat&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="10" tid="189766"&gt;Andy Warhol&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="10" tid="274867"&gt;à Paris&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="266213"&gt;A-7&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="87158"&gt;Aeroflot&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="16423"&gt;Alcoa&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="395988"&gt;An-22&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="395991"&gt;An-225&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="324056"&gt;Antonov An-14&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="324055"&gt;Antonov An-2&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="262464"&gt;Antonov An-225&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="319264"&gt;Antonov An-24&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="393356"&gt;Antonov An-71&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="144640"&gt;Boeing&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="173032"&gt;Catalan&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="242967"&gt;Caterpillar&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="175314"&gt;Chat&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="28340"&gt;Coca-Cola&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="62090"&gt;Dow Jones&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="291292"&gt;Dow Jones Industrial Average&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="218599"&gt;DuPont&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="423450"&gt;Extension&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="324053"&gt;Fieseler Fi 156&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="27637"&gt;General Electric&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="572566"&gt;Grand Troyes&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="20754"&gt;Hewlett-Packard&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="133734"&gt;Hitachi&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="38401"&gt;IBM&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="43445"&gt;ISO&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="117388"&gt;Illinois&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="120338"&gt;Intel&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="271819"&gt;Intel Corporation&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="167697"&gt;International Business Machines Corporation&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="247228"&gt;JPMorgan Chase&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="304031"&gt;Kharkiv&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="54274"&gt;Kiev&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="23147"&gt;Microsoft&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="122948"&gt;Mitsubishi&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="54344"&gt;Moscou&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="33641"&gt;NYSE&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="232114"&gt;New York Stock Exchange&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="395986"&gt;Oleg Antonov&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="395985"&gt;Oleg Konstantinovitch Antonov&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="296602"&gt;Organisation internationale de normalisation&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="127848"&gt;Peoria&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="119569"&gt;Perkins&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="127048"&gt;Simferopol&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="298653"&gt;The Walt Disney Company&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="219009"&gt;Tracteur&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="27365"&gt;Troyes&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="115057"&gt;Ukraine&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="7390"&gt;Volvo&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="11467"&gt;américain&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="17371"&gt;catalan&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="436426"&gt;cellule anti-terroriste&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="150"&gt;chat&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="436425"&gt;commande Unix&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="275113"&gt;engin de chantier&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="7637"&gt;extension&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="204068"&gt;moteur Diesel&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="81931"&gt;restructuration&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="95633"&gt;scarification&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="66102"&gt;tombereau&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="58906"&gt;tracteur&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="31388"&gt;États-Unis&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="9" tid="405948"&gt;Tsubasa&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="9" tid="163324"&gt;l'art&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="248328"&gt;Actes Sud&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="19371"&gt;Beckmann&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="429584"&gt;Dreams&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="36636"&gt;Hopper&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="7677"&gt;Hélion&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="127676"&gt;Magritte&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="146231"&gt;Miró&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="404586"&gt;Musée&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="60328"&gt;Nature&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="139092"&gt;Passion&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="141603"&gt;Paysage&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="130366"&gt;Picasso&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="109319"&gt;Prague&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="16769"&gt;Rochelle&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="426048"&gt;Surréalisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="52958"&gt;Ville de Paris&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="110261"&gt;clown&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="21911"&gt;communicant&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="2151991"&gt;communicantes&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="148087"&gt;explosive&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="142888"&gt;gomme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="136300"&gt;habituel&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="1822755"&gt;habituels&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="409748"&gt;metafisica&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="106625"&gt;perdu&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="155554"&gt;perdue&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="179378"&gt;ps&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="62795"&gt;surréaliste&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="136786"&gt;ville&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="15210"&gt;villes&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="13626"&gt;web&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="138588"&gt;Jean&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="40453"&gt;Jean-Michel&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="72563"&gt;La Révolution&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="428720"&gt;Primitive&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="106803"&gt;Robert Morris&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="87367"&gt;are&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="113625"&gt;beat&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="30318"&gt;civilisation&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="116178"&gt;collection&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="201843"&gt;homme nouveau&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="30843"&gt;outil&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="152267"&gt;outils&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="35841"&gt;peinture&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="52184"&gt;peintures&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="103402"&gt;saint&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="124115"&gt;sainte&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="127764"&gt;série&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="25649"&gt;Dialogue&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="413329"&gt;Espace&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="416256"&gt;Gaudí&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="25204"&gt;La Force&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="146141"&gt;Monde&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="432834"&gt;Mythology&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="426277"&gt;Poetry&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="430468"&gt;Press&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="78449"&gt;Reims&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="52867"&gt;Times&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="73457"&gt;artiste&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="84874"&gt;développer&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="411592"&gt;développés&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="113093"&gt;jungle&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="131240"&gt;lire&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="179417"&gt;ss&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="299018"&gt;Éditions Gallimard&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="409161"&gt;Crayon&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="188853"&gt;Edward Hopper&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="142939"&gt;ISBN&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="132191"&gt;Le Grand&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="40780"&gt;Max Beckmann&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="120191"&gt;René Magritte&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="300194"&gt;Yale University&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="90889"&gt;art italien&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="7773"&gt;chimérique&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="153089"&gt;en ligne&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="90796"&gt;exciting&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="106091"&gt;festival&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="162730"&gt;musée d'art moderne&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="33916"&gt;nomade&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="99948"&gt;romantisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="93484"&gt;Avignon&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="74037"&gt;Madrid&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="58090"&gt;Mexico&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="29760"&gt;Montréal&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="289255"&gt;Philip&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="26750"&gt;Tokyo&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="105406"&gt;Tours&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="87248"&gt;am&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="331576"&gt;amoir&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="6789"&gt;condo&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="188113"&gt;du roi&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="145211"&gt;frère&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="142914"&gt;image&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="153600"&gt;images&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="41490"&gt;inspiration&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="81683"&gt;irréductibilité&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="232247"&gt;shell&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="278178"&gt;snake&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="66754"&gt;un seul&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="118975"&gt;éloquence&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="36410"&gt;Aillaud&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="433302"&gt;Futurisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="81739"&gt;George&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="430530"&gt;Graveur&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="403875"&gt;Page&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="297155"&gt;Portraits&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="408598"&gt;Rhein&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="152364"&gt;climat tempéré&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="287791"&gt;exercices spirituels&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="12237"&gt;fabrique&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="78979"&gt;ibid&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="6129"&gt;lucide&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="30641"&gt;navaja&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="75936"&gt;officiel&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="244471"&gt;officielle&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="21835"&gt;parcours&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="59052"&gt;retour&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="141337"&gt;tourne&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="34683"&gt;transcendantal&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="406118"&gt;und&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="155638"&gt;Beaux-Arts&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="28078"&gt;Cosmos&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="11766"&gt;Gilles&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="19157"&gt;Grand Jeu&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="10294"&gt;Michael&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="404587"&gt;Museum&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="136904"&gt;National&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="62369"&gt;Palais&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="140111"&gt;Section d'or&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="284182"&gt;chemin faisant&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="59058"&gt;consulter&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="2156870"&gt;consultée&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="63865"&gt;dépôt&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="136307"&gt;moderne&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="410168"&gt;nacional&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="71651"&gt;réalisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="133476"&gt;somnambulisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="403898"&gt;École&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="153225"&gt;Art&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="145507"&gt;Gazette&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="26656"&gt;La Grande Parade&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="179582"&gt;Lauren&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="62988"&gt;Newton&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="7674"&gt;Robert Nanteuil&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="10018"&gt;cubisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="148771"&gt;joyeuse&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="273577"&gt;mai 2008&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="49926"&gt;profanation&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="6367"&gt;ravin&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="12325"&gt;supérieur&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="102332"&gt;supérieure&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="140650"&gt;urbain&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="411149"&gt;urbaines&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="142661"&gt;zone&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="9547"&gt;éloge&lt;/rel&gt;<br />
+&lt;/sortant&gt;<br />
+<br />
+&lt;entrant&gt;<br />
+&lt;rel type="r_coocurrence" poids="252" tid="100370"&gt;exposition&lt;/rel&gt;<br />
+&lt;rel type="r_associated" poids="100" tid="104640"&gt;cat-boat&lt;/rel&gt;<br />
+&lt;rel type="r_associated" poids="100" tid="276030"&gt;l-cat&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="91" tid="113317"&gt;Paris&lt;/rel&gt;<br />
+&lt;rel type="r_isa" poids="36" tid="104640"&gt;cat-boat&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="32" tid="402451"&gt;Éditions&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="21" tid="43116"&gt;Chimères&lt;/rel&gt;<br />
+&lt;rel type="r_associated" poids="20" tid="433616"&gt;CAT&lt;/rel&gt;<br />
+&lt;rel type="r_associated" poids="20" tid="402457"&gt;Cat&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="17" tid="103621"&gt;André Masson&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="16" tid="34271"&gt;Arles&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="15" tid="113288"&gt;avant-garde&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="12" tid="46402"&gt;David Hockney&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="11" tid="98069"&gt;surréalisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="10" tid="189766"&gt;Andy Warhol&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="286252"&gt;Commandes Unix&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="436421"&gt;Communauté d'agglomération Troyenne&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="436422"&gt;Conduite à Tenir&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="423635"&gt;TAC&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="418547"&gt;Tac&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="397881"&gt;Type&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="436425"&gt;commande Unix&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="147082"&gt;commandes&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="71303"&gt;concaténation&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="592718"&gt;conduite à tenir&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="1470699"&gt;cron&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="313549"&gt;crontab&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="103665"&gt;env&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="239020"&gt;grep&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="318901"&gt;printf&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="313545"&gt;sudo&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="61305"&gt;tac&lt;/rel&gt;<br />
+&lt;rel type="r_wiki" poids="10" tid="15235"&gt;type&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="10" tid="274867"&gt;à Paris&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="9" tid="405948"&gt;Tsubasa&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="9" tid="163324"&gt;l'art&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="248328"&gt;Actes Sud&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="19371"&gt;Beckmann&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="429584"&gt;Dreams&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="36636"&gt;Hopper&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="7677"&gt;Hélion&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="127676"&gt;Magritte&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="146231"&gt;Miró&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="404586"&gt;Musée&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="60328"&gt;Nature&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="139092"&gt;Passion&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="141603"&gt;Paysage&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="130366"&gt;Picasso&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="109319"&gt;Prague&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="16769"&gt;Rochelle&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="426048"&gt;Surréalisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="52958"&gt;Ville de Paris&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="110261"&gt;clown&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="21911"&gt;communicant&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="2151991"&gt;communicantes&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="148087"&gt;explosive&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="142888"&gt;gomme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="136300"&gt;habituel&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="1822755"&gt;habituels&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="409748"&gt;metafisica&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="106625"&gt;perdu&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="155554"&gt;perdue&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="179378"&gt;ps&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="62795"&gt;surréaliste&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="136786"&gt;ville&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="15210"&gt;villes&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="8" tid="13626"&gt;web&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="138588"&gt;Jean&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="40453"&gt;Jean-Michel&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="72563"&gt;La Révolution&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="428720"&gt;Primitive&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="106803"&gt;Robert Morris&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="87367"&gt;are&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="113625"&gt;beat&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="30318"&gt;civilisation&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="116178"&gt;collection&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="201843"&gt;homme nouveau&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="30843"&gt;outil&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="152267"&gt;outils&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="35841"&gt;peinture&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="52184"&gt;peintures&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="103402"&gt;saint&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="124115"&gt;sainte&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="7" tid="127764"&gt;série&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="25649"&gt;Dialogue&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="413329"&gt;Espace&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="416256"&gt;Gaudí&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="25204"&gt;La Force&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="146141"&gt;Monde&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="432834"&gt;Mythology&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="426277"&gt;Poetry&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="430468"&gt;Press&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="78449"&gt;Reims&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="52867"&gt;Times&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="73457"&gt;artiste&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="84874"&gt;développer&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="411592"&gt;développés&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="113093"&gt;jungle&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="131240"&gt;lire&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="179417"&gt;ss&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="6" tid="299018"&gt;Éditions Gallimard&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="409161"&gt;Crayon&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="188853"&gt;Edward Hopper&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="142939"&gt;ISBN&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="132191"&gt;Le Grand&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="40780"&gt;Max Beckmann&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="120191"&gt;René Magritte&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="300194"&gt;Yale University&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="90889"&gt;art italien&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="7773"&gt;chimérique&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="153089"&gt;en ligne&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="90796"&gt;exciting&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="106091"&gt;festival&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="162730"&gt;musée d'art moderne&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="33916"&gt;nomade&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="5" tid="99948"&gt;romantisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="93484"&gt;Avignon&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="74037"&gt;Madrid&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="58090"&gt;Mexico&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="29760"&gt;Montréal&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="289255"&gt;Philip&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="26750"&gt;Tokyo&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="105406"&gt;Tours&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="87248"&gt;am&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="331576"&gt;amoir&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="6789"&gt;condo&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="188113"&gt;du roi&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="145211"&gt;frère&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="142914"&gt;image&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="153600"&gt;images&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="41490"&gt;inspiration&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="81683"&gt;irréductibilité&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="232247"&gt;shell&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="278178"&gt;snake&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="66754"&gt;un seul&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="4" tid="118975"&gt;éloquence&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="36410"&gt;Aillaud&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="433302"&gt;Futurisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="81739"&gt;George&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="430530"&gt;Graveur&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="403875"&gt;Page&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="297155"&gt;Portraits&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="408598"&gt;Rhein&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="152364"&gt;climat tempéré&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="287791"&gt;exercices spirituels&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="12237"&gt;fabrique&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="78979"&gt;ibid&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="6129"&gt;lucide&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="30641"&gt;navaja&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="75936"&gt;officiel&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="244471"&gt;officielle&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="21835"&gt;parcours&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="59052"&gt;retour&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="141337"&gt;tourne&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="34683"&gt;transcendantal&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="3" tid="406118"&gt;und&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="155638"&gt;Beaux-Arts&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="28078"&gt;Cosmos&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="11766"&gt;Gilles&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="19157"&gt;Grand Jeu&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="10294"&gt;Michael&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="404587"&gt;Museum&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="136904"&gt;National&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="62369"&gt;Palais&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="140111"&gt;Section d'or&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="284182"&gt;chemin faisant&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="59058"&gt;consulter&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="2156870"&gt;consultée&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="63865"&gt;dépôt&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="136307"&gt;moderne&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="410168"&gt;nacional&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="71651"&gt;réalisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="133476"&gt;somnambulisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="2" tid="403898"&gt;École&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="153225"&gt;Art&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="145507"&gt;Gazette&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="26656"&gt;La Grande Parade&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="179582"&gt;Lauren&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="62988"&gt;Newton&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="7674"&gt;Robert Nanteuil&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="10018"&gt;cubisme&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="148771"&gt;joyeuse&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="273577"&gt;mai 2008&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="49926"&gt;profanation&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="6367"&gt;ravin&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="12325"&gt;supérieur&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="102332"&gt;supérieure&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="140650"&gt;urbain&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="411149"&gt;urbaines&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="142661"&gt;zone&lt;/rel&gt;<br />
+&lt;rel type="r_coocurrence" poids="1" tid="9547"&gt;éloge&lt;/rel&gt;<br />
+&lt;/entrant&gt;<br />
+<br />
+&lt;/jdm&gt;<br />
+<p>Code XML (cf source)<code>
+<jdm>
+<mot poids="50" id="309048">cat</mot>
+<mot-formate>cat</mot-formate>
+<def>hi</def>
+<sortant>
+<rel type="r_associated" poids="1000000" tid="239128">_COM</rel>
+<rel type="r_infopot" poids="267" tid="223173">_POL-POS</rel>
+<rel type="r_coocurrence" poids="252" tid="100370">exposition</rel>
+<rel type="r_locution" poids="122" tid="104640">cat-boat</rel>
+<rel type="r_locution" poids="122" tid="276030">l-cat</rel>
+<rel type="r_coocurrence" poids="91" tid="113317">Paris</rel>
+<rel type="r_infopot" poids="85" tid="254876">_POL-POS_PC</rel>
+<rel type="r_infopot" poids="47" tid="241794">_POL-NEUTRE</rel>
+<rel type="r_coocurrence" poids="32" tid="402451">Éditions</rel>
+<rel type="r_pos" poids="25" tid="171870">Nom:</rel>
+<rel type="r_hypo" poids="25" tid="104640">cat-boat</rel>
+<rel type="r_infopot" poids="25" tid="276096">_INFO-WIKI-YES</rel>
+<rel type="r_coocurrence" poids="21" tid="43116">Chimères</rel>
+<rel type="r_associated" poids="20" tid="433616">CAT</rel>
+<rel type="r_associated" poids="20" tid="402457">Cat</rel>
+<rel type="r_coocurrence" poids="17" tid="103621">André Masson</rel>
+<rel type="r_coocurrence" poids="16" tid="34271">Arles</rel>
+<rel type="r_infopot" poids="15" tid="254877">_POL-NEUTRE_PC</rel>
+<rel type="r_coocurrence" poids="15" tid="113288">avant-garde</rel>
+<rel type="r_coocurrence" poids="12" tid="46402">David Hockney</rel>
+<rel type="r_coocurrence" poids="11" tid="98069">surréalisme</rel>
+<rel type="r_associated" poids="10" tid="104640">cat-boat</rel>
+<rel type="r_coocurrence" poids="10" tid="189766">Andy Warhol</rel>
+<rel type="r_coocurrence" poids="10" tid="274867">à Paris</rel>
+<rel type="r_wiki" poids="10" tid="266213">A-7</rel>
+<rel type="r_wiki" poids="10" tid="87158">Aeroflot</rel>
+<rel type="r_wiki" poids="10" tid="16423">Alcoa</rel>
+<rel type="r_wiki" poids="10" tid="395988">An-22</rel>
+<rel type="r_wiki" poids="10" tid="395991">An-225</rel>
+<rel type="r_wiki" poids="10" tid="324056">Antonov An-14</rel>
+<rel type="r_wiki" poids="10" tid="324055">Antonov An-2</rel>
+<rel type="r_wiki" poids="10" tid="262464">Antonov An-225</rel>
+<rel type="r_wiki" poids="10" tid="319264">Antonov An-24</rel>
+<rel type="r_wiki" poids="10" tid="393356">Antonov An-71</rel>
+<rel type="r_wiki" poids="10" tid="144640">Boeing</rel>
+<rel type="r_wiki" poids="10" tid="173032">Catalan</rel>
+<rel type="r_wiki" poids="10" tid="242967">Caterpillar</rel>
+<rel type="r_wiki" poids="10" tid="175314">Chat</rel>
+<rel type="r_wiki" poids="10" tid="28340">Coca-Cola</rel>
+<rel type="r_wiki" poids="10" tid="62090">Dow Jones</rel>
+<rel type="r_wiki" poids="10" tid="291292">Dow Jones Industrial Average</rel>
+<rel type="r_wiki" poids="10" tid="218599">DuPont</rel>
+<rel type="r_wiki" poids="10" tid="423450">Extension</rel>
+<rel type="r_wiki" poids="10" tid="324053">Fieseler Fi 156</rel>
+<rel type="r_wiki" poids="10" tid="27637">General Electric</rel>
+<rel type="r_wiki" poids="10" tid="572566">Grand Troyes</rel>
+<rel type="r_wiki" poids="10" tid="20754">Hewlett-Packard</rel>
+<rel type="r_wiki" poids="10" tid="133734">Hitachi</rel>
+<rel type="r_wiki" poids="10" tid="38401">IBM</rel>
+<rel type="r_wiki" poids="10" tid="43445">ISO</rel>
+<rel type="r_wiki" poids="10" tid="117388">Illinois</rel>
+<rel type="r_wiki" poids="10" tid="120338">Intel</rel>
+<rel type="r_wiki" poids="10" tid="271819">Intel Corporation</rel>
+<rel type="r_wiki" poids="10" tid="167697">International Business Machines Corporation</rel>
+<rel type="r_wiki" poids="10" tid="247228">JPMorgan Chase</rel>
+<rel type="r_wiki" poids="10" tid="304031">Kharkiv</rel>
+<rel type="r_wiki" poids="10" tid="54274">Kiev</rel>
+<rel type="r_wiki" poids="10" tid="23147">Microsoft</rel>
+<rel type="r_wiki" poids="10" tid="122948">Mitsubishi</rel>
+<rel type="r_wiki" poids="10" tid="54344">Moscou</rel>
+<rel type="r_wiki" poids="10" tid="33641">NYSE</rel>
+<rel type="r_wiki" poids="10" tid="232114">New York Stock Exchange</rel>
+<rel type="r_wiki" poids="10" tid="395986">Oleg Antonov</rel>
+<rel type="r_wiki" poids="10" tid="395985">Oleg Konstantinovitch Antonov</rel>
+<rel type="r_wiki" poids="10" tid="296602">Organisation internationale de normalisation</rel>
+<rel type="r_wiki" poids="10" tid="127848">Peoria</rel>
+<rel type="r_wiki" poids="10" tid="119569">Perkins</rel>
+<rel type="r_wiki" poids="10" tid="127048">Simferopol</rel>
+<rel type="r_wiki" poids="10" tid="298653">The Walt Disney Company</rel>
+<rel type="r_wiki" poids="10" tid="219009">Tracteur</rel>
+<rel type="r_wiki" poids="10" tid="27365">Troyes</rel>
+<rel type="r_wiki" poids="10" tid="115057">Ukraine</rel>
+<rel type="r_wiki" poids="10" tid="7390">Volvo</rel>
+<rel type="r_wiki" poids="10" tid="11467">américain</rel>
+<rel type="r_wiki" poids="10" tid="17371">catalan</rel>
+<rel type="r_wiki" poids="10" tid="436426">cellule anti-terroriste</rel>
+<rel type="r_wiki" poids="10" tid="150">chat</rel>
+<rel type="r_wiki" poids="10" tid="436425">commande Unix</rel>
+<rel type="r_wiki" poids="10" tid="275113">engin de chantier</rel>
+<rel type="r_wiki" poids="10" tid="7637">extension</rel>
+<rel type="r_wiki" poids="10" tid="204068">moteur Diesel</rel>
+<rel type="r_wiki" poids="10" tid="81931">restructuration</rel>
+<rel type="r_wiki" poids="10" tid="95633">scarification</rel>
+<rel type="r_wiki" poids="10" tid="66102">tombereau</rel>
+<rel type="r_wiki" poids="10" tid="58906">tracteur</rel>
+<rel type="r_wiki" poids="10" tid="31388">États-Unis</rel>
+<rel type="r_coocurrence" poids="9" tid="405948">Tsubasa</rel>
+<rel type="r_coocurrence" poids="9" tid="163324">l'art</rel>
+<rel type="r_coocurrence" poids="8" tid="248328">Actes Sud</rel>
+<rel type="r_coocurrence" poids="8" tid="19371">Beckmann</rel>
+<rel type="r_coocurrence" poids="8" tid="429584">Dreams</rel>
+<rel type="r_coocurrence" poids="8" tid="36636">Hopper</rel>
+<rel type="r_coocurrence" poids="8" tid="7677">Hélion</rel>
+<rel type="r_coocurrence" poids="8" tid="127676">Magritte</rel>
+<rel type="r_coocurrence" poids="8" tid="146231">Miró</rel>
+<rel type="r_coocurrence" poids="8" tid="404586">Musée</rel>
+<rel type="r_coocurrence" poids="8" tid="60328">Nature</rel>
+<rel type="r_coocurrence" poids="8" tid="139092">Passion</rel>
+<rel type="r_coocurrence" poids="8" tid="141603">Paysage</rel>
+<rel type="r_coocurrence" poids="8" tid="130366">Picasso</rel>
+<rel type="r_coocurrence" poids="8" tid="109319">Prague</rel>
+<rel type="r_coocurrence" poids="8" tid="16769">Rochelle</rel>
+<rel type="r_coocurrence" poids="8" tid="426048">Surréalisme</rel>
+<rel type="r_coocurrence" poids="8" tid="52958">Ville de Paris</rel>
+<rel type="r_coocurrence" poids="8" tid="110261">clown</rel>
+<rel type="r_coocurrence" poids="8" tid="21911">communicant</rel>
+<rel type="r_coocurrence" poids="8" tid="2151991">communicantes</rel>
+<rel type="r_coocurrence" poids="8" tid="148087">explosive</rel>
+<rel type="r_coocurrence" poids="8" tid="142888">gomme</rel>
+<rel type="r_coocurrence" poids="8" tid="136300">habituel</rel>
+<rel type="r_coocurrence" poids="8" tid="1822755">habituels</rel>
+<rel type="r_coocurrence" poids="8" tid="409748">metafisica</rel>
+<rel type="r_coocurrence" poids="8" tid="106625">perdu</rel>
+<rel type="r_coocurrence" poids="8" tid="155554">perdue</rel>
+<rel type="r_coocurrence" poids="8" tid="179378">ps</rel>
+<rel type="r_coocurrence" poids="8" tid="62795">surréaliste</rel>
+<rel type="r_coocurrence" poids="8" tid="136786">ville</rel>
+<rel type="r_coocurrence" poids="8" tid="15210">villes</rel>
+<rel type="r_coocurrence" poids="8" tid="13626">web</rel>
+<rel type="r_coocurrence" poids="7" tid="138588">Jean</rel>
+<rel type="r_coocurrence" poids="7" tid="40453">Jean-Michel</rel>
+<rel type="r_coocurrence" poids="7" tid="72563">La Révolution</rel>
+<rel type="r_coocurrence" poids="7" tid="428720">Primitive</rel>
+<rel type="r_coocurrence" poids="7" tid="106803">Robert Morris</rel>
+<rel type="r_coocurrence" poids="7" tid="87367">are</rel>
+<rel type="r_coocurrence" poids="7" tid="113625">beat</rel>
+<rel type="r_coocurrence" poids="7" tid="30318">civilisation</rel>
+<rel type="r_coocurrence" poids="7" tid="116178">collection</rel>
+<rel type="r_coocurrence" poids="7" tid="201843">homme nouveau</rel>
+<rel type="r_coocurrence" poids="7" tid="30843">outil</rel>
+<rel type="r_coocurrence" poids="7" tid="152267">outils</rel>
+<rel type="r_coocurrence" poids="7" tid="35841">peinture</rel>
+<rel type="r_coocurrence" poids="7" tid="52184">peintures</rel>
+<rel type="r_coocurrence" poids="7" tid="103402">saint</rel>
+<rel type="r_coocurrence" poids="7" tid="124115">sainte</rel>
+<rel type="r_coocurrence" poids="7" tid="127764">série</rel>
+<rel type="r_coocurrence" poids="6" tid="25649">Dialogue</rel>
+<rel type="r_coocurrence" poids="6" tid="413329">Espace</rel>
+<rel type="r_coocurrence" poids="6" tid="416256">Gaudí</rel>
+<rel type="r_coocurrence" poids="6" tid="25204">La Force</rel>
+<rel type="r_coocurrence" poids="6" tid="146141">Monde</rel>
+<rel type="r_coocurrence" poids="6" tid="432834">Mythology</rel>
+<rel type="r_coocurrence" poids="6" tid="426277">Poetry</rel>
+<rel type="r_coocurrence" poids="6" tid="430468">Press</rel>
+<rel type="r_coocurrence" poids="6" tid="78449">Reims</rel>
+<rel type="r_coocurrence" poids="6" tid="52867">Times</rel>
+<rel type="r_coocurrence" poids="6" tid="73457">artiste</rel>
+<rel type="r_coocurrence" poids="6" tid="84874">développer</rel>
+<rel type="r_coocurrence" poids="6" tid="411592">développés</rel>
+<rel type="r_coocurrence" poids="6" tid="113093">jungle</rel>
+<rel type="r_coocurrence" poids="6" tid="131240">lire</rel>
+<rel type="r_coocurrence" poids="6" tid="179417">ss</rel>
+<rel type="r_coocurrence" poids="6" tid="299018">Éditions Gallimard</rel>
+<rel type="r_coocurrence" poids="5" tid="409161">Crayon</rel>
+<rel type="r_coocurrence" poids="5" tid="188853">Edward Hopper</rel>
+<rel type="r_coocurrence" poids="5" tid="142939">ISBN</rel>
+<rel type="r_coocurrence" poids="5" tid="132191">Le Grand</rel>
+<rel type="r_coocurrence" poids="5" tid="40780">Max Beckmann</rel>
+<rel type="r_coocurrence" poids="5" tid="120191">René Magritte</rel>
+<rel type="r_coocurrence" poids="5" tid="300194">Yale University</rel>
+<rel type="r_coocurrence" poids="5" tid="90889">art italien</rel>
+<rel type="r_coocurrence" poids="5" tid="7773">chimérique</rel>
+<rel type="r_coocurrence" poids="5" tid="153089">en ligne</rel>
+<rel type="r_coocurrence" poids="5" tid="90796">exciting</rel>
+<rel type="r_coocurrence" poids="5" tid="106091">festival</rel>
+<rel type="r_coocurrence" poids="5" tid="162730">musée d'art moderne</rel>
+<rel type="r_coocurrence" poids="5" tid="33916">nomade</rel>
+<rel type="r_coocurrence" poids="5" tid="99948">romantisme</rel>
+<rel type="r_coocurrence" poids="4" tid="93484">Avignon</rel>
+<rel type="r_coocurrence" poids="4" tid="74037">Madrid</rel>
+<rel type="r_coocurrence" poids="4" tid="58090">Mexico</rel>
+<rel type="r_coocurrence" poids="4" tid="29760">Montréal</rel>
+<rel type="r_coocurrence" poids="4" tid="289255">Philip</rel>
+<rel type="r_coocurrence" poids="4" tid="26750">Tokyo</rel>
+<rel type="r_coocurrence" poids="4" tid="105406">Tours</rel>
+<rel type="r_coocurrence" poids="4" tid="87248">am</rel>
+<rel type="r_coocurrence" poids="4" tid="331576">amoir</rel>
+<rel type="r_coocurrence" poids="4" tid="6789">condo</rel>
+<rel type="r_coocurrence" poids="4" tid="188113">du roi</rel>
+<rel type="r_coocurrence" poids="4" tid="145211">frère</rel>
+<rel type="r_coocurrence" poids="4" tid="142914">image</rel>
+<rel type="r_coocurrence" poids="4" tid="153600">images</rel>
+<rel type="r_coocurrence" poids="4" tid="41490">inspiration</rel>
+<rel type="r_coocurrence" poids="4" tid="81683">irréductibilité</rel>
+<rel type="r_coocurrence" poids="4" tid="232247">shell</rel>
+<rel type="r_coocurrence" poids="4" tid="278178">snake</rel>
+<rel type="r_coocurrence" poids="4" tid="66754">un seul</rel>
+<rel type="r_coocurrence" poids="4" tid="118975">éloquence</rel>
+<rel type="r_coocurrence" poids="3" tid="36410">Aillaud</rel>
+<rel type="r_coocurrence" poids="3" tid="433302">Futurisme</rel>
+<rel type="r_coocurrence" poids="3" tid="81739">George</rel>
+<rel type="r_coocurrence" poids="3" tid="430530">Graveur</rel>
+<rel type="r_coocurrence" poids="3" tid="403875">Page</rel>
+<rel type="r_coocurrence" poids="3" tid="297155">Portraits</rel>
+<rel type="r_coocurrence" poids="3" tid="408598">Rhein</rel>
+<rel type="r_coocurrence" poids="3" tid="152364">climat tempéré</rel>
+<rel type="r_coocurrence" poids="3" tid="287791">exercices spirituels</rel>
+<rel type="r_coocurrence" poids="3" tid="12237">fabrique</rel>
+<rel type="r_coocurrence" poids="3" tid="78979">ibid</rel>
+<rel type="r_coocurrence" poids="3" tid="6129">lucide</rel>
+<rel type="r_coocurrence" poids="3" tid="30641">navaja</rel>
+<rel type="r_coocurrence" poids="3" tid="75936">officiel</rel>
+<rel type="r_coocurrence" poids="3" tid="244471">officielle</rel>
+<rel type="r_coocurrence" poids="3" tid="21835">parcours</rel>
+<rel type="r_coocurrence" poids="3" tid="59052">retour</rel>
+<rel type="r_coocurrence" poids="3" tid="141337">tourne</rel>
+<rel type="r_coocurrence" poids="3" tid="34683">transcendantal</rel>
+<rel type="r_coocurrence" poids="3" tid="406118">und</rel>
+<rel type="r_coocurrence" poids="2" tid="155638">Beaux-Arts</rel>
+<rel type="r_coocurrence" poids="2" tid="28078">Cosmos</rel>
+<rel type="r_coocurrence" poids="2" tid="11766">Gilles</rel>
+<rel type="r_coocurrence" poids="2" tid="19157">Grand Jeu</rel>
+<rel type="r_coocurrence" poids="2" tid="10294">Michael</rel>
+<rel type="r_coocurrence" poids="2" tid="404587">Museum</rel>
+<rel type="r_coocurrence" poids="2" tid="136904">National</rel>
+<rel type="r_coocurrence" poids="2" tid="62369">Palais</rel>
+<rel type="r_coocurrence" poids="2" tid="140111">Section d'or</rel>
+<rel type="r_coocurrence" poids="2" tid="284182">chemin faisant</rel>
+<rel type="r_coocurrence" poids="2" tid="59058">consulter</rel>
+<rel type="r_coocurrence" poids="2" tid="2156870">consultée</rel>
+<rel type="r_coocurrence" poids="2" tid="63865">dépôt</rel>
+<rel type="r_coocurrence" poids="2" tid="136307">moderne</rel>
+<rel type="r_coocurrence" poids="2" tid="410168">nacional</rel>
+<rel type="r_coocurrence" poids="2" tid="71651">réalisme</rel>
+<rel type="r_coocurrence" poids="2" tid="133476">somnambulisme</rel>
+<rel type="r_coocurrence" poids="2" tid="403898">École</rel>
+<rel type="r_coocurrence" poids="1" tid="153225">Art</rel>
+<rel type="r_coocurrence" poids="1" tid="145507">Gazette</rel>
+<rel type="r_coocurrence" poids="1" tid="26656">La Grande Parade</rel>
+<rel type="r_coocurrence" poids="1" tid="179582">Lauren</rel>
+<rel type="r_coocurrence" poids="1" tid="62988">Newton</rel>
+<rel type="r_coocurrence" poids="1" tid="7674">Robert Nanteuil</rel>
+<rel type="r_coocurrence" poids="1" tid="10018">cubisme</rel>
+<rel type="r_coocurrence" poids="1" tid="148771">joyeuse</rel>
+<rel type="r_coocurrence" poids="1" tid="273577">mai 2008</rel>
+<rel type="r_coocurrence" poids="1" tid="49926">profanation</rel>
+<rel type="r_coocurrence" poids="1" tid="6367">ravin</rel>
+<rel type="r_coocurrence" poids="1" tid="12325">supérieur</rel>
+<rel type="r_coocurrence" poids="1" tid="102332">supérieure</rel>
+<rel type="r_coocurrence" poids="1" tid="140650">urbain</rel>
+<rel type="r_coocurrence" poids="1" tid="411149">urbaines</rel>
+<rel type="r_coocurrence" poids="1" tid="142661">zone</rel>
+<rel type="r_coocurrence" poids="1" tid="9547">éloge</rel>
+</sortant>
+<entrant>
+<rel type="r_coocurrence" poids="252" tid="100370">exposition</rel>
+<rel type="r_associated" poids="100" tid="104640">cat-boat</rel>
+<rel type="r_associated" poids="100" tid="276030">l-cat</rel>
+<rel type="r_coocurrence" poids="91" tid="113317">Paris</rel>
+<rel type="r_isa" poids="36" tid="104640">cat-boat</rel>
+<rel type="r_coocurrence" poids="32" tid="402451">Éditions</rel>
+<rel type="r_coocurrence" poids="21" tid="43116">Chimères</rel>
+<rel type="r_associated" poids="20" tid="433616">CAT</rel>
+<rel type="r_associated" poids="20" tid="402457">Cat</rel>
+<rel type="r_coocurrence" poids="17" tid="103621">André Masson</rel>
+<rel type="r_coocurrence" poids="16" tid="34271">Arles</rel>
+<rel type="r_coocurrence" poids="15" tid="113288">avant-garde</rel>
+<rel type="r_coocurrence" poids="12" tid="46402">David Hockney</rel>
+<rel type="r_coocurrence" poids="11" tid="98069">surréalisme</rel>
+<rel type="r_coocurrence" poids="10" tid="189766">Andy Warhol</rel>
+<rel type="r_wiki" poids="10" tid="286252">Commandes Unix</rel>
+<rel type="r_wiki" poids="10" tid="436421">Communauté d'agglomération Troyenne</rel>
+<rel type="r_wiki" poids="10" tid="436422">Conduite à Tenir</rel>
+<rel type="r_wiki" poids="10" tid="423635">TAC</rel>
+<rel type="r_wiki" poids="10" tid="418547">Tac</rel>
+<rel type="r_wiki" poids="10" tid="397881">Type</rel>
+<rel type="r_wiki" poids="10" tid="436425">commande Unix</rel>
+<rel type="r_wiki" poids="10" tid="147082">commandes</rel>
+<rel type="r_wiki" poids="10" tid="71303">concaténation</rel>
+<rel type="r_wiki" poids="10" tid="592718">conduite à tenir</rel>
+<rel type="r_wiki" poids="10" tid="1470699">cron</rel>
+<rel type="r_wiki" poids="10" tid="313549">crontab</rel>
+<rel type="r_wiki" poids="10" tid="103665">env</rel>
+<rel type="r_wiki" poids="10" tid="239020">grep</rel>
+<rel type="r_wiki" poids="10" tid="318901">printf</rel>
+<rel type="r_wiki" poids="10" tid="313545">sudo</rel>
+<rel type="r_wiki" poids="10" tid="61305">tac</rel>
+<rel type="r_wiki" poids="10" tid="15235">type</rel>
+<rel type="r_coocurrence" poids="10" tid="274867">à Paris</rel>
+<rel type="r_coocurrence" poids="9" tid="405948">Tsubasa</rel>
+<rel type="r_coocurrence" poids="9" tid="163324">l'art</rel>
+<rel type="r_coocurrence" poids="8" tid="248328">Actes Sud</rel>
+<rel type="r_coocurrence" poids="8" tid="19371">Beckmann</rel>
+<rel type="r_coocurrence" poids="8" tid="429584">Dreams</rel>
+<rel type="r_coocurrence" poids="8" tid="36636">Hopper</rel>
+<rel type="r_coocurrence" poids="8" tid="7677">Hélion</rel>
+<rel type="r_coocurrence" poids="8" tid="127676">Magritte</rel>
+<rel type="r_coocurrence" poids="8" tid="146231">Miró</rel>
+<rel type="r_coocurrence" poids="8" tid="404586">Musée</rel>
+<rel type="r_coocurrence" poids="8" tid="60328">Nature</rel>
+<rel type="r_coocurrence" poids="8" tid="139092">Passion</rel>
+<rel type="r_coocurrence" poids="8" tid="141603">Paysage</rel>
+<rel type="r_coocurrence" poids="8" tid="130366">Picasso</rel>
+<rel type="r_coocurrence" poids="8" tid="109319">Prague</rel>
+<rel type="r_coocurrence" poids="8" tid="16769">Rochelle</rel>
+<rel type="r_coocurrence" poids="8" tid="426048">Surréalisme</rel>
+<rel type="r_coocurrence" poids="8" tid="52958">Ville de Paris</rel>
+<rel type="r_coocurrence" poids="8" tid="110261">clown</rel>
+<rel type="r_coocurrence" poids="8" tid="21911">communicant</rel>
+<rel type="r_coocurrence" poids="8" tid="2151991">communicantes</rel>
+<rel type="r_coocurrence" poids="8" tid="148087">explosive</rel>
+<rel type="r_coocurrence" poids="8" tid="142888">gomme</rel>
+<rel type="r_coocurrence" poids="8" tid="136300">habituel</rel>
+<rel type="r_coocurrence" poids="8" tid="1822755">habituels</rel>
+<rel type="r_coocurrence" poids="8" tid="409748">metafisica</rel>
+<rel type="r_coocurrence" poids="8" tid="106625">perdu</rel>
+<rel type="r_coocurrence" poids="8" tid="155554">perdue</rel>
+<rel type="r_coocurrence" poids="8" tid="179378">ps</rel>
+<rel type="r_coocurrence" poids="8" tid="62795">surréaliste</rel>
+<rel type="r_coocurrence" poids="8" tid="136786">ville</rel>
+<rel type="r_coocurrence" poids="8" tid="15210">villes</rel>
+<rel type="r_coocurrence" poids="8" tid="13626">web</rel>
+<rel type="r_coocurrence" poids="7" tid="138588">Jean</rel>
+<rel type="r_coocurrence" poids="7" tid="40453">Jean-Michel</rel>
+<rel type="r_coocurrence" poids="7" tid="72563">La Révolution</rel>
+<rel type="r_coocurrence" poids="7" tid="428720">Primitive</rel>
+<rel type="r_coocurrence" poids="7" tid="106803">Robert Morris</rel>
+<rel type="r_coocurrence" poids="7" tid="87367">are</rel>
+<rel type="r_coocurrence" poids="7" tid="113625">beat</rel>
+<rel type="r_coocurrence" poids="7" tid="30318">civilisation</rel>
+<rel type="r_coocurrence" poids="7" tid="116178">collection</rel>
+<rel type="r_coocurrence" poids="7" tid="201843">homme nouveau</rel>
+<rel type="r_coocurrence" poids="7" tid="30843">outil</rel>
+<rel type="r_coocurrence" poids="7" tid="152267">outils</rel>
+<rel type="r_coocurrence" poids="7" tid="35841">peinture</rel>
+<rel type="r_coocurrence" poids="7" tid="52184">peintures</rel>
+<rel type="r_coocurrence" poids="7" tid="103402">saint</rel>
+<rel type="r_coocurrence" poids="7" tid="124115">sainte</rel>
+<rel type="r_coocurrence" poids="7" tid="127764">série</rel>
+<rel type="r_coocurrence" poids="6" tid="25649">Dialogue</rel>
+<rel type="r_coocurrence" poids="6" tid="413329">Espace</rel>
+<rel type="r_coocurrence" poids="6" tid="416256">Gaudí</rel>
+<rel type="r_coocurrence" poids="6" tid="25204">La Force</rel>
+<rel type="r_coocurrence" poids="6" tid="146141">Monde</rel>
+<rel type="r_coocurrence" poids="6" tid="432834">Mythology</rel>
+<rel type="r_coocurrence" poids="6" tid="426277">Poetry</rel>
+<rel type="r_coocurrence" poids="6" tid="430468">Press</rel>
+<rel type="r_coocurrence" poids="6" tid="78449">Reims</rel>
+<rel type="r_coocurrence" poids="6" tid="52867">Times</rel>
+<rel type="r_coocurrence" poids="6" tid="73457">artiste</rel>
+<rel type="r_coocurrence" poids="6" tid="84874">développer</rel>
+<rel type="r_coocurrence" poids="6" tid="411592">développés</rel>
+<rel type="r_coocurrence" poids="6" tid="113093">jungle</rel>
+<rel type="r_coocurrence" poids="6" tid="131240">lire</rel>
+<rel type="r_coocurrence" poids="6" tid="179417">ss</rel>
+<rel type="r_coocurrence" poids="6" tid="299018">Éditions Gallimard</rel>
+<rel type="r_coocurrence" poids="5" tid="409161">Crayon</rel>
+<rel type="r_coocurrence" poids="5" tid="188853">Edward Hopper</rel>
+<rel type="r_coocurrence" poids="5" tid="142939">ISBN</rel>
+<rel type="r_coocurrence" poids="5" tid="132191">Le Grand</rel>
+<rel type="r_coocurrence" poids="5" tid="40780">Max Beckmann</rel>
+<rel type="r_coocurrence" poids="5" tid="120191">René Magritte</rel>
+<rel type="r_coocurrence" poids="5" tid="300194">Yale University</rel>
+<rel type="r_coocurrence" poids="5" tid="90889">art italien</rel>
+<rel type="r_coocurrence" poids="5" tid="7773">chimérique</rel>
+<rel type="r_coocurrence" poids="5" tid="153089">en ligne</rel>
+<rel type="r_coocurrence" poids="5" tid="90796">exciting</rel>
+<rel type="r_coocurrence" poids="5" tid="106091">festival</rel>
+<rel type="r_coocurrence" poids="5" tid="162730">musée d'art moderne</rel>
+<rel type="r_coocurrence" poids="5" tid="33916">nomade</rel>
+<rel type="r_coocurrence" poids="5" tid="99948">romantisme</rel>
+<rel type="r_coocurrence" poids="4" tid="93484">Avignon</rel>
+<rel type="r_coocurrence" poids="4" tid="74037">Madrid</rel>
+<rel type="r_coocurrence" poids="4" tid="58090">Mexico</rel>
+<rel type="r_coocurrence" poids="4" tid="29760">Montréal</rel>
+<rel type="r_coocurrence" poids="4" tid="289255">Philip</rel>
+<rel type="r_coocurrence" poids="4" tid="26750">Tokyo</rel>
+<rel type="r_coocurrence" poids="4" tid="105406">Tours</rel>
+<rel type="r_coocurrence" poids="4" tid="87248">am</rel>
+<rel type="r_coocurrence" poids="4" tid="331576">amoir</rel>
+<rel type="r_coocurrence" poids="4" tid="6789">condo</rel>
+<rel type="r_coocurrence" poids="4" tid="188113">du roi</rel>
+<rel type="r_coocurrence" poids="4" tid="145211">frère</rel>
+<rel type="r_coocurrence" poids="4" tid="142914">image</rel>
+<rel type="r_coocurrence" poids="4" tid="153600">images</rel>
+<rel type="r_coocurrence" poids="4" tid="41490">inspiration</rel>
+<rel type="r_coocurrence" poids="4" tid="81683">irréductibilité</rel>
+<rel type="r_coocurrence" poids="4" tid="232247">shell</rel>
+<rel type="r_coocurrence" poids="4" tid="278178">snake</rel>
+<rel type="r_coocurrence" poids="4" tid="66754">un seul</rel>
+<rel type="r_coocurrence" poids="4" tid="118975">éloquence</rel>
+<rel type="r_coocurrence" poids="3" tid="36410">Aillaud</rel>
+<rel type="r_coocurrence" poids="3" tid="433302">Futurisme</rel>
+<rel type="r_coocurrence" poids="3" tid="81739">George</rel>
+<rel type="r_coocurrence" poids="3" tid="430530">Graveur</rel>
+<rel type="r_coocurrence" poids="3" tid="403875">Page</rel>
+<rel type="r_coocurrence" poids="3" tid="297155">Portraits</rel>
+<rel type="r_coocurrence" poids="3" tid="408598">Rhein</rel>
+<rel type="r_coocurrence" poids="3" tid="152364">climat tempéré</rel>
+<rel type="r_coocurrence" poids="3" tid="287791">exercices spirituels</rel>
+<rel type="r_coocurrence" poids="3" tid="12237">fabrique</rel>
+<rel type="r_coocurrence" poids="3" tid="78979">ibid</rel>
+<rel type="r_coocurrence" poids="3" tid="6129">lucide</rel>
+<rel type="r_coocurrence" poids="3" tid="30641">navaja</rel>
+<rel type="r_coocurrence" poids="3" tid="75936">officiel</rel>
+<rel type="r_coocurrence" poids="3" tid="244471">officielle</rel>
+<rel type="r_coocurrence" poids="3" tid="21835">parcours</rel>
+<rel type="r_coocurrence" poids="3" tid="59052">retour</rel>
+<rel type="r_coocurrence" poids="3" tid="141337">tourne</rel>
+<rel type="r_coocurrence" poids="3" tid="34683">transcendantal</rel>
+<rel type="r_coocurrence" poids="3" tid="406118">und</rel>
+<rel type="r_coocurrence" poids="2" tid="155638">Beaux-Arts</rel>
+<rel type="r_coocurrence" poids="2" tid="28078">Cosmos</rel>
+<rel type="r_coocurrence" poids="2" tid="11766">Gilles</rel>
+<rel type="r_coocurrence" poids="2" tid="19157">Grand Jeu</rel>
+<rel type="r_coocurrence" poids="2" tid="10294">Michael</rel>
+<rel type="r_coocurrence" poids="2" tid="404587">Museum</rel>
+<rel type="r_coocurrence" poids="2" tid="136904">National</rel>
+<rel type="r_coocurrence" poids="2" tid="62369">Palais</rel>
+<rel type="r_coocurrence" poids="2" tid="140111">Section d'or</rel>
+<rel type="r_coocurrence" poids="2" tid="284182">chemin faisant</rel>
+<rel type="r_coocurrence" poids="2" tid="59058">consulter</rel>
+<rel type="r_coocurrence" poids="2" tid="2156870">consultée</rel>
+<rel type="r_coocurrence" poids="2" tid="63865">dépôt</rel>
+<rel type="r_coocurrence" poids="2" tid="136307">moderne</rel>
+<rel type="r_coocurrence" poids="2" tid="410168">nacional</rel>
+<rel type="r_coocurrence" poids="2" tid="71651">réalisme</rel>
+<rel type="r_coocurrence" poids="2" tid="133476">somnambulisme</rel>
+<rel type="r_coocurrence" poids="2" tid="403898">École</rel>
+<rel type="r_coocurrence" poids="1" tid="153225">Art</rel>
+<rel type="r_coocurrence" poids="1" tid="145507">Gazette</rel>
+<rel type="r_coocurrence" poids="1" tid="26656">La Grande Parade</rel>
+<rel type="r_coocurrence" poids="1" tid="179582">Lauren</rel>
+<rel type="r_coocurrence" poids="1" tid="62988">Newton</rel>
+<rel type="r_coocurrence" poids="1" tid="7674">Robert Nanteuil</rel>
+<rel type="r_coocurrence" poids="1" tid="10018">cubisme</rel>
+<rel type="r_coocurrence" poids="1" tid="148771">joyeuse</rel>
+<rel type="r_coocurrence" poids="1" tid="273577">mai 2008</rel>
+<rel type="r_coocurrence" poids="1" tid="49926">profanation</rel>
+<rel type="r_coocurrence" poids="1" tid="6367">ravin</rel>
+<rel type="r_coocurrence" poids="1" tid="12325">supérieur</rel>
+<rel type="r_coocurrence" poids="1" tid="102332">supérieure</rel>
+<rel type="r_coocurrence" poids="1" tid="140650">urbain</rel>
+<rel type="r_coocurrence" poids="1" tid="411149">urbaines</rel>
+<rel type="r_coocurrence" poids="1" tid="142661">zone</rel>
+<rel type="r_coocurrence" poids="1" tid="9547">éloge</rel>
+</entrant>
+</jdm></code>
+
+
+    </p></div>
+    </th><th>
+
+
+
+
+</th></tr></tbody></table>
+</div>
+  
+<div class="humane" id="humane"></div></body></html>
