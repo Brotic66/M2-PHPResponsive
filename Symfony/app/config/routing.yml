@@ -1,0 +1,8 @@
+php_responsive:
+    resource: "@PHPResponsiveBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

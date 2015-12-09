@@ -1,0 +1,7 @@
+services:
+#    php_responsive.example:
+#        class: PHPResponsiveBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+    php_responsive.xml_service:
+        class: PHPResponsiveBundle\Services\XMLServiceBuilder

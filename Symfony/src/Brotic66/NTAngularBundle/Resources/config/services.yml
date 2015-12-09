@@ -1,0 +1,7 @@
+services:
+#    brotic66_nt_angular.example:
+#        class: Brotic66\NTAngularBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+    brotic66_nt_angular.return:
+        class: Brotic66\NTAngularBundle\Services\AngularReturn
