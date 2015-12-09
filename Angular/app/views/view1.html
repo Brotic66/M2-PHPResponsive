@@ -1,0 +1,22 @@
+<div ng-controller="mainCtrl">
+    <form>
+        <div class="form-group">
+            <label for="terme">Terme à chercher :</label>
+            <input type="text" name="terme" id="terme" ng-model="terme" />
+        </div>
+        <button class="btn btn-success" ng-click="submit()">Chercher</button>
+    </form>
+    <div ng-if="rcv | isObject">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">Généralités</div>
+            </div>
+            <div class="panel-body">
+                Mot : {{ rcv.word.mot }}<br />
+                Poids : {{ rcv.word.poids }}<br />
+                Mot formate : {{ rcv.word.motFormate }}<br />
+                def : {{ rcv.word.def }}
+            </div>
+        </div>
+    </div>
+</div>
