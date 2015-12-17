@@ -1,22 +1,84 @@
-<div ng-controller="mainCtrl">
-    <form>
+<div ng-controller="mainCtrl" class="text-center">
+    <form class="form-inline">
         <div class="form-group">
             <label for="terme">Terme à chercher :</label>
             <input type="text" name="terme" id="terme" ng-model="terme" />
         </div>
         <button class="btn btn-success" ng-click="submit()">Chercher</button>
+        <img src="img/ajax-loader.gif" ng-show="ajaxLoader" ng-model="fucking" />
     </form>
+    <hr />
     <div ng-if="rcv | isObject">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="panel-title">Généralités</div>
-            </div>
-            <div class="panel-body">
-                Mot : {{ rcv.word.mot }}<br />
-                Poids : {{ rcv.word.poids }}<br />
-                Mot formate : {{ rcv.word.motFormate }}<br />
-                def : {{ rcv.word.def }}
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="panel-title">Généralités</div>
+                </div>
+                <div class="panel-body">
+                    Mot : {{ rcv.word.mot }}<br />
+                    Poids : {{ rcv.word.poids }}<br />
+                    Mot formate : {{ rcv.word.motFormate }}<br />
+                    def : {{ rcv.word.def }}
+                </div>
             </div>
         </div>
+        <hr />
+        <article id="rel">
+            <div class="col-md-6">
+                <uib-accordion>
+                <uib-accordion-group class="panel panel-primary">
+                    <uib-accordion-heading class="panel-heading">
+                        <div class="panel-title">Entrants  <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></div>
+                    </uib-accordion-heading>
+                        <table class="table table-striped" id="tableEntrants" datatable="">
+                            <thead>
+                            <tr>
+                                <th>TID</th>
+                                <th>Nom</th>
+                                <th>Type</th>
+                                <th>Poids</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="rel in rcv.word.relsEntrant">
+                                <td>{{ rel.tid}}</td>
+                                <td>{{ rel.nom }}</td>
+                                <td>{{ rel.type }}</td>
+                                <td>{{ rel.poids }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                </uib-accordion-group>
+                </uib-accordion>
+            </div>
+            <div class="col-md-6">
+                <uib-accordion>
+                    <uib-accordion-group class="panel panel-primary">
+                        <uib-accordion-heading class="panel-heading">
+                            <div class="panel-title">Sortants  <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></div>
+                        </uib-accordion-heading>
+                        <table class="table table-striped" id="tableSortants" datatable="">
+                            <thead>
+                            <tr>
+                                <th>TID</th>
+                                <th>Nom</th>
+                                <th>Type</th>
+                                <th>Poids</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="rel in rcv.word.relsSortant">
+                                <td>{{ rel.tid}}</td>
+                                <td>{{ rel.nom }}</td>
+                                <td>{{ rel.type }}</td>
+                                <td>{{ rel.poids }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </uib-accordion-group>
+                </uib-accordion>
+            </div>
+        </article>
+        <hr />
     </div>
 </div>

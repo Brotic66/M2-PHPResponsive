@@ -8,13 +8,20 @@ angular.module('myApp')
 
         $scope.submit = function () {
 
+            $scope.ajaxLoader = true;
+
           $http
-              .post('http://localhost:8000/', $scope.terme)
+              .get('http://localhost:8000/' + $scope.terme)
               .success(function (data) {
                  $scope.rcv =  data;
+                  $scope.ajaxLoader = false;
+                  $(document).ready( function () {
+                     $('body').find('#tableEntrants').DataTable();
+                  });
               })
               .error(function (data) {
                   $scope.rcv = data;
+                  $scope.ajaxLoader = false;
               });
         };
     });

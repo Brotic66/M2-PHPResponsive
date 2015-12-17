@@ -44,8 +44,9 @@ class XMLServiceBuilder
         $this->body = $body;
 
         $utf8Body = utf8_encode($this->body);
-        $afterJdm = explode('<code>', $utf8Body);
-        $xml = explode('</code>', $afterJdm[1]);
+        $afterJdm = explode('<CODE>', $utf8Body);
+       // print_r($afterJdm);
+        $xml = explode('</CODE>', $afterJdm[1]);
 
         //echo '<textarea>' . $xml[0] . '</textarea>';
         $this->dom->loadXML(str_replace('<br>', '<br />', $xml[0]));
@@ -66,6 +67,7 @@ class XMLServiceBuilder
         $this->word->setMotFormate($motFormate->nodeValue);
         $this->word->setPoids($mot->attributes->getNamedItem('poids')->nodeValue);
         $this->word->setId($mot->attributes->getNamedItem('id')->nodeValue);
+        $this->word->setDef($this->dom->getElementsByTagName('def')->item(0)->nodeValue);
 
         $this->buildEntrants($entrants);
         $this->buildSortants($sortants);
@@ -104,11 +106,11 @@ class XMLServiceBuilder
                 $rel = new Relation();
 
                 $rel->setNom($sortant->nodeValue);
-                $rel->setType($sortant->attributes->getNamedItem('type'));
-                $rel->setPoids($sortant->attributes->getNamedItem('poids'));
-                $rel->setTid($sortant->attributes->getNamedItem('tid'));
+                $rel->setType($sortant->attributes->getNamedItem('type')->nodeValue);
+                $rel->setPoids($sortant->attributes->getNamedItem('poids')->nodeValue);
+                $rel->setTid($sortant->attributes->getNamedItem('tid')->nodeValue);
 
-                $this->word->addRelEntrant($rel);
+                $this->word->addRelSortant($rel);
             }
         }
     }
