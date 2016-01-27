@@ -106,7 +106,7 @@ class XMLServiceBuilder
                 $rel = new Relation();
 
                 $rel->setNom($sortant->nodeValue);
-                $rel->setType($sortant->attributes->getNamedItem('type')->nodeValue);
+                $rel->setType($this->bindAssoc($sortant->attributes->getNamedItem('type')->nodeValue));
                 $rel->setPoids($sortant->attributes->getNamedItem('poids')->nodeValue);
                 $rel->setTid($sortant->attributes->getNamedItem('tid')->nodeValue);
 
@@ -141,4 +141,13 @@ class XMLServiceBuilder
         //return unserialize(file_get_contents(__DIR__ . '/../Cache/' . $terme . '.cache'));
         return unserialize(file_get_contents('Cache/' . $terme . '.cache'));
     }
+
+    public function bindAssoc($type)
+    {
+        $file = fopen("assoc.json", "r");
+        $content = fread($file, filesize("assoc.json"));
+        $json = json_decode($content);
+        return isset($json[$type]) ? $json[$type] : $type;
+    }
+
 }
