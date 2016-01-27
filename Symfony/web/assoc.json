@@ -96,5 +96,6 @@
 	"r_domain_subst": "Domaines de substitutions",
 	"r_activvoice": "Voix actives",
 	"r_aki": "Équivalents",
-	"r_inhib": "Inhibations"
+	"r_inhib": "Inhibations",
+    "r_is_smaller_than": "Est plus petit que"
 }

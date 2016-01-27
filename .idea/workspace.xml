@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c48604b-ddce-4bdc-a24a-a06667ea3258" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/src/PHPResponsiveBundle/Services/XMLServiceBuilder.php" afterPath="$PROJECT_DIR$/Symfony/src/PHPResponsiveBundle/Services/XMLServiceBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/web/assoc.json" afterPath="$PROJECT_DIR$/Symfony/web/assoc.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wordGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,21 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="XMLServiceBuilder.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="XMLServiceBuilder.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Symfony/src/PHPResponsiveBundle/Services/XMLServiceBuilder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24210526">
+            <state vertical-scroll-proportion="-4.7916665">
               <caret line="89" column="102" selection-start-line="89" selection-start-column="102" selection-end-line="89" selection-end-column="102" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assoc.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="assoc.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Symfony/web/assoc.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.859375">
+              <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -71,6 +72,7 @@
         <option value="$PROJECT_DIR$/Symfony/src/PHPResponsiveBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/Angular/app/views/view1.html" />
         <option value="$PROJECT_DIR$/Symfony/src/PHPResponsiveBundle/Services/XMLServiceBuilder.php" />
+        <option value="$PROJECT_DIR$/Symfony/web/assoc.json" />
       </list>
     </option>
   </component>
@@ -683,18 +685,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Symfony/web/assoc.json">
+    <entry file="file://$PROJECT_DIR$/Symfony/src/PHPResponsiveBundle/Services/XMLServiceBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.7916665">
+          <caret line="89" column="102" selection-start-line="89" selection-start-column="102" selection-end-line="89" selection-end-column="102" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Symfony/src/PHPResponsiveBundle/Services/XMLServiceBuilder.php">
+    <entry file="file://$PROJECT_DIR$/Symfony/web/assoc.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24210526">
-          <caret line="89" column="102" selection-start-line="89" selection-start-column="102" selection-end-line="89" selection-end-column="102" />
+        <state vertical-scroll-proportion="0.859375">
+          <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
           <folding />
         </state>
       </provider>
