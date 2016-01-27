@@ -146,7 +146,7 @@ class XMLServiceBuilder
     {
         $file = fopen("assoc.json", "r");
         $content = fread($file, filesize("assoc.json"));
-        $json = json_decode($content);
+        $json = json_decode($content, true);
         return isset($json[$type]) ? $json[$type] : $type;
     }
 
