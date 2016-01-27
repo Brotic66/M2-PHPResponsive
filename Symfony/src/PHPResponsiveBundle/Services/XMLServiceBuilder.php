@@ -87,7 +87,7 @@ class XMLServiceBuilder
                 $rel = new Relation();
 
                 $rel->setNom($entrant->nodeValue);
-                $rel->setType($entrant->attributes->getNamedItem('type')->nodeValue);
+                $rel->setType($this->bindAssoc($entrant->attributes->getNamedItem('type')->nodeValue));
                 $rel->setPoids($entrant->attributes->getNamedItem('poids')->nodeValue);
                 $rel->setTid($entrant->attributes->getNamedItem('tid')->nodeValue);
                 
