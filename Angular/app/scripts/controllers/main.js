@@ -16,8 +16,8 @@ angular.module('myApp')
                  $scope.rcv =  data;
                   $scope.ajaxLoader = false;
                   $(document).ready( function () {
-                      $('body').find('#tableEntrants').DataTable().fnDestroy();
-                      $('body').find('#tableEntrants').DataTable();
+                     /* $('body').find('#tableEntrants').DataTable().fnDestroy();
+                      $('body').find('#tableEntrants').DataTable();*/
 
                   });
               })
